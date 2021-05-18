@@ -9,6 +9,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Blazored.Toast;
+
 
 namespace PrimerRegistroBoostrap
 {
@@ -27,6 +29,8 @@ namespace PrimerRegistroBoostrap
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
+            services.AddBlazoredToast();
+
             services.AddSingleton<WeatherForecastService>();
         }
 
